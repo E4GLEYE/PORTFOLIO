@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(240, 213, 178);
+
+}
+
+* {
+    font-family:sans-serif;
+}
+
+#header {
+
+    margin:0;
+    padding:0;
+    background-color: burlywood;
+    font-family: Gill 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+#header h1 {
+    margin-left: 2vw;
+}
+
+#aboutbody {
+
+    top:15vh;
+    position:relative;
+    width:100%;
+}
+
+#aboutbody p {
+
+    margin-left: 4vw;
+}

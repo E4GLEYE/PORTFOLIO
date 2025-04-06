@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#header {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+}
+
+#header p {
+    color: aliceblue;
+    position: absolute;
+    top: 2vh;
+    left: 3vw;
+    font-size: 50px;
+    transition: 1s;
+}
+
+#header_name:hover {
+    transform: translateX(10px);
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.navlinks {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: 1s;
+    text-decoration: solid;
+}
+
+.navlinks:hover {
+    background-color: rgb(139, 6, 6);
+    transform: scale(1.1);
+}
+
+#navdiv {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+#intro {
+    position: relative;
+}
+
+#intro div {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+    font-size: 20px;
+    font-family: "Clarkson Serif", Helvetica, sans-serif;
+}
+
+#intro img {
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+#intro_talk1 {
+    transition: 1s;
+    font-size: 3vw;
+    font-family: monospace;
+}
+
+#intro_talk1:hover {
+    transform: translateX(20px);
+}
+
+#myself p {
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size:3vw;
+}
+
+#myself {
+    width : 100%;
+    height: 50vh;
+    background-color:#333333;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#latest_proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+#latest_proj p {
+    font-size: 30px;
+}
+
+#card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(146, 80, 0);
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 20px;
+    background: rgb(229, 226, 217);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0066ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.card-btn:hover {
+    background: #0052cc;
+}
+
+#footer_container {
+    width: 100%;
+    height: 100px;
+    background-color: #4f4b4b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer_container p {
+    color: white;
+    font-family: Helvetica;
+    padding-left: 20px;
+}
+
+#footer_social {
+
+    display: flex;
+    justify-content: right;
+    gap:2vw;
+    margin-right: 2vw;
+    align-items: center;
+}
+
+#footer_social img {
+    width: 2vw;
+    min-width: 30px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1024px) {
+    #header p {
+        font-size: 40px;
+    }
+    
+    .navlinks {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    #intro div {
+        left: 40px;
+        bottom: 60px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        height: 25vh;
+    }
+    
+    #header p {
+        font-size: 30px;
+        top: 1vh;
+    }
+    
+    #navbar {
+        top: 15vh;
+    }
+    
+    .navlinks {
+        font-size: 16px;
+        padding: 6px;
+    }
+    
+    #navdiv {
+        justify-content: center;
+        gap: 10px;
+        padding-right: 0;
+    }
+    
+    #intro div {
+        left: 20px;
+        bottom: 40px;
+        font-size: 16px;
+    }
+    
+    #latest_proj p {
+        font-size: 24px;
+    }
+    
+    .card {
+        max-width: 250px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        height: 20vh;
+    }
+    
+    #header p {
+        font-size: 24px;
+    }
+    
+    #navbar {
+        top: 12vh;
+        height: 8vh;
+    }
+    
+    .navlinks {
+        font-size: 14px;
+        padding: 4px;
+    }
+    
+    #intro div {
+        left: 10px;
+        bottom: 20px;
+        font-size: 14px;
+    }
+    
+    #footer_container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    #footer_container p {
+        padding: 5px 0;
+    }
+    
+    #footer_social img {
+        width: 40px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .card {
+        max-width: 90%;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+#popup_div {
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+#popup_btn {
+
+    padding : 2vw;
+    background-color: orange;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-decoration: solid;
+    color:#333
+}
+
+#popup_btn:hover {
+
+    transform:translateY(-5px);
+}
+
+  /* Style the popup content */
+.popup-content {
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+}
+
+  /* Show popup when targeted */
+.popup:target {
+    display: block;
+}
+
+  /* Close button style */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
